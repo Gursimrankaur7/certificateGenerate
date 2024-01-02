@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Certificate of Appreciation</title>
+  <style>
+  
+
+     
+    .certificate {
+      background-image:url("https://www.freestock.com/450/freestock_137363447.jpg");
+      background-size: cover;
+      background-repeat: no-repeat; 
+      height:400px;
+      width:650px;
+      margin: 170px auto;
+      padding: 80px 40px 20px 40px ;
+      color: black; 
+    }
+    .title {
+      text-align: center;
+      font-size: 30px;
+      margin-top:20px;
+      margin-bottom: 20px;
+      font-weight:900;
+      color:rgb(4, 76, 4);
+    }
+    .content {
+      text-align: center;
+      font-size: 20px;
+    }
+    .details {
+      margin-top: 30px;
+      font-size: 18px;
+      padding-left:100px;
+    }
+    .signature {
+      text-align: center;
+      margin-top: 50px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <div class="title" >Certificate of Appreciation</div>
+    <div class="content">
+      <p>This certificate is awarded to <%= item.name %> for donating <%= item.trees_donated %> trees.</p>
+    </div>
+    <div class="details">
+      <p>Amount Donated: $<%= item.amount %></p>
+      <p>Email: <%= item.email_id %></p>
+      <p>Phone: <%= item.phone_no %></p>
+    </div>
+    <div class="signature">TREES🌳</div>
+  </div>
+</body>
+</html>
